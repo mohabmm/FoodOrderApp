@@ -15,14 +15,12 @@ class Food {
   String foodName;
   int price;
   int total;
-  //bool blocked;
 
   Food({
     this.id,
     this.foodName,
     this.price,
     this.total,
-    //this.blocked,
   });
 
   factory Food.fromMap(Map<String, dynamic> json) => new Food(
@@ -30,7 +28,6 @@ class Food {
       foodName: json["food_name"],
       price: json["price"],
       total: json["total"]
-      //  blocked: json["blocked"] == 1,
       );
 
   Map<String, dynamic> toMap() => {
@@ -38,6 +35,5 @@ class Food {
         "food_name": foodName,
         "price": price,
         "total": total,
-        //"blocked": blocked,
       };
 }

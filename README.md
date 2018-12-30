@@ -1,4 +1,4 @@
-# firestoreapp
+# Food Order App
 
 The intention of this app is to build a fully functioning Food Order app using Flutter 
 The app depends mainly on Firebase as source of data and we work with BLOC pattern. 

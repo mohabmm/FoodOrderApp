@@ -72,18 +72,7 @@ class DBProvider {
     var res = await db.query("Food", where: "id = ?", whereArgs: [id]);
     return res.isNotEmpty ? Food.fromMap(res.first) : null;
   }
-//
-//  Future<List<Food>> getBlockedClients() async {
-//    final db = await database;
-//
-//    print("works");
-//    // var res = await db.rawQuery("SELECT * FROM Client WHERE blocked=1");
-//    var res = await db.query("Food", where: "blocked = ? ", whereArgs: [1]);
-//
-//    List<Food> list =
-//        res.isNotEmpty ? res.map((c) => Food.fromMap(c)).toList() : [];
-//    return list;
-//  }
+
 
   Future<List<Food>> getAllFoods() async {
     final db = await database;
